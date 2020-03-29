@@ -1,11 +1,15 @@
-# Electron Forge + Svelte  Starter
+# Electron Forge + Svelte + Typescript  Starter
 
-Get up and running with 💪 Svelte & ⚡ Electron. 
+Get up and running with Svelte & Typescript & Electron. 
+
+Forked from https://github.com/codediodeio/electron-forge-svelte.git to add Typescript support.
 
 ## Usage
 
+https://github.com/angelsolaorbaiceta/svelte-ts-electron-forge
+
 ```
-git clone https://github.com/codediodeio/electron-forge-svelte.git my-app
+git clone https://github.com/angelsolaorbaiceta/svelte-ts-electron-forge my-app
 cd my-app
 
 npm install
