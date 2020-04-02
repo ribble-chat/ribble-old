@@ -1,4 +1,4 @@
-# Electron Forge + Svelte + Typescript  Starter
+# Electron Forge + Svelte + Typescript Starter
 
 Get up and running with Svelte & Typescript & Electron. 
 
