@@ -6,6 +6,7 @@ import postcss from 'rollup-plugin-postcss'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
 import typescript from '@rollup/plugin-typescript'
+import alias from '@rollup/plugin-alias'
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -29,6 +30,12 @@ export default {
     }),
 
     typescript(),
+
+    alias({
+      entries: [
+        { find: '@pkg/utils', replacement: 'src/packages/utils' }
+      ],
+    }),
 
     resolve({
       browser: true,

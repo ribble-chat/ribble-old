@@ -1,5 +1,9 @@
 <script lang="ts">
+  import { fibonacci } from '@pkg/utils'
+
   export let name: string
+
+  let sevFibNumber: number = fibonacci(17)
 </script>
 
 <style lang="scss" global>
@@ -26,4 +30,5 @@
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
     to learn how to build Svelte apps.
   </p>
+  <p>The 17th fibonacci number is {sevFibNumber}</p>
 </main>
