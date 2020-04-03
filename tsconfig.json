@@ -4,7 +4,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "types": ["svelte", "node"],
+    "esModuleInterop": true,
+    "types": ["svelte", "node", "jest"],
     "baseUrl": "./",
     "paths": {
       "@pkg/*": ["packages/*/src"]
