@@ -3,11 +3,11 @@ module.exports = {
   coverageDirectory: 'coverage',
   coverageReporters: ['html', 'lcov', 'text'],
   collectCoverageFrom: [
-    'src/packages/*/src/**/*.ts',
+    'packages/*/src/**/*.ts',
   ],
   watchPathIgnorePatterns: ['/node_modules/'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
   rootDir: __dirname,
-  testMatch: ['<rootDir>/src/packages/**/__tests__/**/*spec.[jt]s?(x)'],
+  testMatch: ['<rootDir>/packages/**/__tests__/**/*spec.[jt]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/']
 }

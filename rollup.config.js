@@ -11,7 +11,7 @@ import alias from '@rollup/plugin-alias'
 const production = !process.env.ROLLUP_WATCH
 
 export default {
-  input: 'src/app/svelte.ts',
+  input: 'app/svelte.ts',
 
   output: {
     sourcemap: !production,
@@ -33,7 +33,7 @@ export default {
 
     alias({
       entries: [
-        { find: /^@pkg\/(.*)/, replacement: 'src/packages/$1'}
+        { find: /^@pkg\/(.*)/, replacement: 'packages/$1'}
       ],
     }),
 
