@@ -33,7 +33,7 @@ export default {
 
     alias({
       entries: [
-        { find: '@pkg/utils', replacement: 'src/packages/utils' }
+        { find: /^@pkg\/(.*)/, replacement: 'src/packages/$1'}
       ],
     }),
 
