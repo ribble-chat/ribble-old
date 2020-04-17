@@ -3,7 +3,7 @@
   "productName": "svelte-ts-electron-forge",
   "version": "1.0.0",
   "description": "Svelte + Typescript + Electron Forge",
-  "main": "src/index.js",
+  "main": "app/index.js",
   "scripts": {
     "test": "jest",
     "start": "concurrently \"npm:svelte-dev\" \"electron-forge start\"",
