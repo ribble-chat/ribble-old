@@ -265,17 +265,6 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@electron-forge/async-ora@6.0.0-beta.50":
-  version "6.0.0-beta.50"
-  resolved "https://registry.yarnpkg.com/@electron-forge/async-ora/-/async-ora-6.0.0-beta.50.tgz#5979a009fdb2bc5650752b0a425d4c2cbfaf53f8"
-  integrity sha512-FYETvsr2oBvOy8jIyOitk4whb86gu1e2v/Uqmcnw4HW7lfYqHS9HiSc9xUI+9bM3csdzCO+pdbhbQfqolisLVg==
-  dependencies:
-    colors "^1.4.0"
-    debug "^4.1.0"
-    log-symbols "^3.0.0"
-    ora "^4.0.3"
-    pretty-ms "^6.0.0"
-
 "@electron-forge/async-ora@6.0.0-beta.51":
   version "6.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@electron-forge/async-ora/-/async-ora-6.0.0-beta.51.tgz#6a6c650a7b0714e1bf3edf9397a11b7c97bff05f"
@@ -409,15 +398,6 @@
     "@malept/cross-spawn-promise" "^1.1.0"
     fs-extra "^9.0.0"
 
-"@electron-forge/maker-base@6.0.0-beta.50":
-  version "6.0.0-beta.50"
-  resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.0.0-beta.50.tgz#0fd3be00e92dc6f5639b3086d785c47858a1591f"
-  integrity sha512-6qGJTWm0qYMMDr7thM8b13eSbWn76lOAhOFHljA9nJOMkuI6mNKg/J7HWdozXaaIvzOyHQexXq1FEummXS5coQ==
-  dependencies:
-    "@electron-forge/shared-types" "6.0.0-beta.50"
-    fs-extra "^8.1.0"
-    which "^2.0.2"
-
 "@electron-forge/maker-base@6.0.0-beta.51":
   version "6.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.0.0-beta.51.tgz#ff60e780d977a558f04cd56c52dc730add3c7a1a"
@@ -458,15 +438,15 @@
   optionalDependencies:
     electron-winstaller "^4.0.0"
 
-"@electron-forge/maker-zip@^6.0.0-beta.50":
-  version "6.0.0-beta.50"
-  resolved "https://registry.yarnpkg.com/@electron-forge/maker-zip/-/maker-zip-6.0.0-beta.50.tgz#a54fff582892bc5d330996c00da9ad4c8992ebf0"
-  integrity sha512-EPrj7KRG/vvo1y1MoTLcnBh3gqX+xPc7kUY7LLUIXs2C68G4k8Tm29YfQEQQbQK/HY+raDnvNjeZemvui/1PXQ==
+"@electron-forge/maker-zip@^6.0.0-beta.51":
+  version "6.0.0-beta.51"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-zip/-/maker-zip-6.0.0-beta.51.tgz#9dc0ecc0bd3275e53c20257ad3821624d06fe7d1"
+  integrity sha512-IQVjj/z4NYcK+mF9v6DnE+5O4/lfP40OahHfGykv/hn9RZJOXZkaRiio/e1meRutpkG/lBIo8/WLs8FUcxpF9A==
   dependencies:
-    "@electron-forge/maker-base" "6.0.0-beta.50"
-    "@electron-forge/shared-types" "6.0.0-beta.50"
+    "@electron-forge/maker-base" "6.0.0-beta.51"
+    "@electron-forge/shared-types" "6.0.0-beta.51"
     cross-zip "^3.0.0"
-    fs-extra "^8.1.0"
+    fs-extra "^9.0.0"
 
 "@electron-forge/plugin-base@6.0.0-beta.51":
   version "6.0.0-beta.51"
@@ -479,16 +459,6 @@
   version "6.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@electron-forge/publisher-base/-/publisher-base-6.0.0-beta.51.tgz#5c3bbe807984ad858c5179cce3b39ebcb2049a1d"
   integrity sha512-Tk29I2wcvQX5Lhi3Rh6kQTmAfrzu9Wus++kD56HQJ72WOqOn2pOT/Tr5IOKOaZF2GQoqPhljCZmPo0Xh7sO6gQ==
-
-"@electron-forge/shared-types@6.0.0-beta.50":
-  version "6.0.0-beta.50"
-  resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-6.0.0-beta.50.tgz#6e721871b9dba679b3028f83cd729d570b361876"
-  integrity sha512-Vg6kCqhkc6xCqKMTubgZ6eh1hTWDx0C7Lg2cmD76vImUUyi87sxk/nOcvNqXm2dndtASDSglAbp4/1tN+aQBvw==
-  dependencies:
-    "@electron-forge/async-ora" "6.0.0-beta.50"
-    "@types/electron-packager" "^14.0.0"
-    electron-rebuild "^1.8.6"
-    ora "^4.0.3"
 
 "@electron-forge/shared-types@6.0.0-beta.51":
   version "6.0.0-beta.51"
@@ -5799,7 +5769,7 @@ pretty-format@^25.4.0:
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
 
-pretty-ms@^6.0.0, pretty-ms@^6.0.1:
+pretty-ms@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/pretty-ms/-/pretty-ms-6.0.1.tgz#03ec6cfee20329f142645e63efad96bb775d3da4"
   integrity sha512-ke4njoVmlotekHlHyCZ3wI/c5AMT8peuHs8rKJqekj/oR5G8lND2dVpicFlUz5cbZgE290vvkMuDwfj/OcW1kw==
