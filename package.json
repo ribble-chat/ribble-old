@@ -50,6 +50,6 @@
     "svelte": "^3.23.0",
     "svelte-preprocess": "^3.9.6",
     "ts-jest": "^25.5.1",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.5"
   }
 }
