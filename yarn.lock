@@ -7003,10 +7003,10 @@ supports-hyperlinks@^2.0.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-svelte-preprocess@^3.9.10:
-  version "3.9.10"
-  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-3.9.10.tgz#c6fc5d3611e52aed1d032029110ec85a8e6b9351"
-  integrity sha512-5jzcIJv0nVDyXbuVy9/CY/x6GtyeYsLD3c5/ADZkGf3nfWb/Atx6lJjieXh7IhJigWJzi0r/e1tFJoeRZMAm6Q==
+svelte-preprocess@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.1.1.tgz#25e22b2acf45a82f66d480c57b8bacf1aeaaffda"
+  integrity sha512-fCnq15SY0MYd70as0z0IcdtU6a6m0RTFdWViWSdV7styI/yp6SVkMinpFR7GbQJR3StzZ/9FEmroSiYYzc3VZA==
   dependencies:
     "@types/pug" "^2.0.4"
     "@types/sass" "^1.16.0"
