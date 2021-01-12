@@ -11,35 +11,33 @@ import alias from '@rollup/plugin-alias'
 const production = !process.env.ROLLUP_WATCH
 
 export default {
-  input: 'app/svelte.ts',
+  input: 'src/svelte.ts',
 
   output: {
     sourcemap: !production,
     format: 'iife',
     name: 'app',
-    file: 'public/build/bundle.js'
+    file: 'public/build/bundle.js',
   },
 
   plugins: [
     svelte({
       ...sveltePreConfig,
       dev: !production,
-      css: css => {
+      css: (css) => {
         css.write('public/build/bundle.css')
-      }
+      },
     }),
 
     typescript(),
 
     alias({
-      entries: [
-        { find: /^@pkg\/(.*)/, replacement: 'packages/$1'}
-      ],
+      entries: [{ find: /^@pkg\/(.*)/, replacement: 'packages/$1' }],
     }),
 
     resolve({
       browser: true,
-      dedupe: ['svelte']
+      dedupe: ['svelte'],
     }),
 
     commonjs(),
@@ -56,12 +54,12 @@ export default {
 
     // If we're building for production (npm run build
     // instead of npm run dev), minify
-    production && terser()
+    production && terser(),
   ],
 
   watch: {
-    clearScreen: false
-  }
+    clearScreen: false,
+  },
 }
 
 function serve() {
@@ -77,10 +75,10 @@ function serve() {
           ['run', 'svelte-start', '--', '--dev'],
           {
             stdio: ['ignore', 'inherit', 'inherit'],
-            shell: true
+            shell: true,
           }
         )
       }
-    }
+    },
   }
 }

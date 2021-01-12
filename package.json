@@ -3,7 +3,7 @@
   "productName": "svelte-ts-electron-forge",
   "version": "1.0.0",
   "description": "Svelte + Typescript + Electron Forge",
-  "main": "app/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest",
     "start": "concurrently \"npm:svelte-dev\" \"electron-forge start\"",
@@ -16,7 +16,7 @@
     "svelte-start": "sirv public"
   },
   "keywords": [],
-  "author": "Angel Sola Orbaiceta",
+  "author": "Jennifer Ong",
   "license": "MIT",
   "config": {
     "forge": "./forge.config.js"
