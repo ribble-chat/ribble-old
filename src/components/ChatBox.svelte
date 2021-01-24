@@ -1,6 +1,6 @@
 <script lang="ts">
   import Message from "./Message.svelte";
-  export const me: string;
+  export let me: string;
   const messages = [
     {
       from: "Nibbles",

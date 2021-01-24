@@ -12,7 +12,7 @@
 </script>
 
 <body>
-  <div>
+  <div id="chat-container">
     <MenuBar {person} />
     <ChatBox {me} />
     <ChatBar />
@@ -20,7 +20,7 @@
 </body>
 
 <style>
-  div {
+  #chat-container {
     height: 100vh;
     display: flex;
     flex-direction: column;

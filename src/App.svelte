@@ -3,7 +3,7 @@
   import SidePanel from "./components/SidePanel.svelte";
 </script>
 
-<div>
+<div id="app-container">
   <SidePanel />
   <Chat />
 </div>
@@ -11,7 +11,8 @@
 <style lang="scss" global>
   @import "./styles/global.scss";
 
-  div {
+  #app-container {
+    height: 100vh;
     display: flex;
   }
 </style>
