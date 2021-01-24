@@ -1,5 +1,13 @@
 @import './mixins.scss';
 
+:root {
+    --bar-bg: #1a1a1a;
+    --message-text-color: #d7d7d7;
+    --send-message-bg: #222222;
+    --chat-box-bg: #343434;
+    --chat-bubble-bg: #232323;
+}
+
 html,
 body {
   margin: 0;
@@ -7,9 +15,22 @@ body {
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  background-color: var(--background-color);
+  overflow-y: hidden;
 }
 
 body, p, a {
   color: var(--main-text-color);
+}
+
+.icon-button {
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    padding-right: 1em;
+    outline: none;
+}
+
+.icon-button:hover {
+    color: #cdcdcd;
 }
