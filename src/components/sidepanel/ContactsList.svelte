@@ -1,12 +1,12 @@
 <script lang="ts">
-  import SideContact from "./SideContact.svelte";
+  import Contact from "./Contact.svelte";
 
-  export let contacts: [];
+  export let contacts = [];
 </script>
 
-<div>
+<div id="">
   {#each contacts as contact}
-    <SideContact {contact} />
+    <Contact {contact} />
   {/each}
 </div>
 

@@ -5,13 +5,13 @@
   };
 </script>
 
-<div>
+<div id="contacts-container">
   <img src={`./images/${contact.profilePicture}`} alt="profile" />
   <p>{contact.name}</p>
 </div>
 
 <style>
-  div {
+  #contacts-container {
     display: flex;
     align-items: center;
     width: 10em;

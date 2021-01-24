@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ChatList from "./ChatList.svelte";
+  import ContactsList from "./ContactsList.svelte";
   let contacts = [
     {
       name: "Nibbles",
@@ -57,7 +57,7 @@
 </script>
 
 <div>
-  <ChatList {contacts} />
+  <ContactsList {contacts} />
 </div>
 
 <style>

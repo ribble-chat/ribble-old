@@ -26,7 +26,7 @@
   ];
 </script>
 
-<div id="chatbox">
+<div id="chatbox-container">
   {#each messages as message}
     {#if me === message.from}
       <div class="message you">
@@ -41,7 +41,7 @@
 </div>
 
 <style>
-  #chatbox {
+  #chatbox-container {
     background-color: var(--chat-box-bg);
     display: flex;
     flex: 1;
