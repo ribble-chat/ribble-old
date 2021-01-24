@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Chat from "./components/Chat.svelte";
-  import SidePanel from "./components/SidePanel.svelte";
+  import { Chat } from "./components/chat";
+  import { SidePanel } from "./components/sidepanel";
 </script>
 
 <div id="app-container">
