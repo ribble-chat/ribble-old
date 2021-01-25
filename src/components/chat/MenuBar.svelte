@@ -41,6 +41,7 @@
     padding-top: 0.4em;
     font-size: 1.1em;
     font-weight: bold;
+    color: white;
   }
 
   #buttons {

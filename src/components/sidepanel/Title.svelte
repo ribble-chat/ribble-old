@@ -3,7 +3,7 @@
 
 <div id="title-container">
   <div id="content-container">
-    <p id="title">Ripple</p>
+    <p id="title">Ribble</p>
     <input id="search-bar" type="text" placeholder="search.." />
   </div>
 </div>
@@ -26,6 +26,7 @@
     padding-bottom: 0.5em;
     font-size: 1em;
     font-weight: bold;
+    color: white;
   }
 
   #search-bar {
