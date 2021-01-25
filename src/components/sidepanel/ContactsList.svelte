@@ -4,20 +4,21 @@
   export let contacts = [];
 </script>
 
-<div id="">
+<div id="contacts-list-container">
   {#each contacts as contact}
     <Contact {contact} />
   {/each}
 </div>
 
 <style>
-  div {
+  #contacts-list-container {
     background-color: var(--chat-bubble-bg);
     display: flex;
-    width: 15em;
     height: 100%;
+    width: 100%;
     flex-direction: column;
     position: relative;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 </style>

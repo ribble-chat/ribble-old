@@ -1,6 +1,19 @@
 <script lang="ts">
-  import ContactsList from "./ContactsList.svelte";
+  import { Title } from "./";
+  import { ContactsList } from "./";
   let contacts = [
+    {
+      name: "Nibbles",
+      profilePicture: "nibbles.png",
+    },
+    {
+      name: "Nibbles",
+      profilePicture: "nibbles.png",
+    },
+    {
+      name: "Nibbles",
+      profilePicture: "nibbles.png",
+    },
     {
       name: "Nibbles",
       profilePicture: "nibbles.png",
@@ -56,12 +69,15 @@
   ];
 </script>
 
-<div>
+<div id="side-panel-container">
+  <Title />
   <ContactsList {contacts} />
 </div>
 
 <style>
-  div {
+  #side-panel-container {
+    min-width: 12em;
+    max-width: 12em;
     height: 100%;
   }
 </style>

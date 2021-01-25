@@ -6,25 +6,31 @@
 </script>
 
 <div id="contacts-container">
-  <img src={`./images/${contact.profilePicture}`} alt="profile" />
-  <p>{contact.name}</p>
+  <img
+    class="profile-picture"
+    src={`./images/${contact.profilePicture}`}
+    alt="profile"
+  />
+  <p id="name">{contact.name}</p>
 </div>
 
 <style>
   #contacts-container {
     display: flex;
     align-items: center;
-    width: 10em;
+    width: 100%;
+    padding-bottom: 0.7em;
+    padding-left: 1em;
   }
 
-  img {
-    width: 2.5em;
-    height: 2.5em;
-    padding: 1em;
-    border-radius: 50%;
+  .profile-picture {
+    width: 2.4em;
+    height: 2.4em;
   }
 
-  p {
+  #name {
     color: white;
+    font-size: 0.9em;
+    padding-left: 1em;
   }
 </style>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Message } from ".";
+  import { Message } from "./";
   export let me: string;
   const messages = [
     {

@@ -3,10 +3,14 @@
 :root {
   --bar-bg: #1a1a1a;
   --message-text-color: #d7d7d7;
-  --send-message-bg: #222222;
+  --form-bg: #222222;
+  --form-place-holder-color: #9f9f9f;
   --chat-box-bg: #343434;
   --chat-bubble-bg: #232323;
-  --scroll-bar-color: #1a1a1a;
+  --side-panel-bg: #232323;
+  --search-bar-bg: #141414;
+  --scroll-bar-color: rgba(0, 0, 0, 0.5);
+  --top-bar-height: 4em;
 }
 
 html,
@@ -25,6 +29,10 @@ a {
   color: var(--main-text-color);
 }
 
+.profile-picture {
+  border-radius: 50%;
+}
+
 .icon-button {
   color: white;
   background: transparent;
@@ -38,10 +46,15 @@ a {
   color: #cdcdcd;
 }
 
-*::-webkit-scrollbar {
-  width: 0.5rem;
+::placeholder {
+  color: var(--form-place-holder-color);
 }
 
-*::-webkit-scrollbar-thumb {
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+::-webkit-scrollbar-thumb {
   background: var(--scroll-bar-color);
+  border-radius: 3em;
 }

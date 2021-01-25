@@ -26,13 +26,9 @@
     border-radius: 0.5em;
     outline: none;
     border: none;
-    background-color: #222222;
+    background-color: var(--form-bg);
     color: white;
     font-size: 1em;
-  }
-
-  #chat-form::placeholder {
-    color: #9f9f9f;
   }
 
   #chat-bar-container {
