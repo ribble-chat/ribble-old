@@ -14,6 +14,7 @@
     background-color: var(--side-panel-bg);
     display: flex;
     flex-direction: column;
+    color: white;
   }
 
   #content-container {
