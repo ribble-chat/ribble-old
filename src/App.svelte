@@ -14,5 +14,6 @@
   #app-container {
     height: 100vh;
     display: flex;
+    overflow: hidden;
   }
 </style>
