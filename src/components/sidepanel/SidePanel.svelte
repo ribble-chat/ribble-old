@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { Title } from "./";
-  import { ContactsList } from "./";
+  import { Title } from ".";
+  import { ContactsList } from ".";
+
   let contacts = [
     {
       name: "Nibbles",
