@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Chat from "./components/Chat.svelte";
-  import SidePanel from "./components/SidePanel.svelte";
+  import { Chat } from "./components/chat";
+  import { SidePanel } from "./components/sidepanel";
 </script>
 
-<div>
+<div id="app-container">
   <SidePanel />
   <Chat />
 </div>
@@ -11,7 +11,8 @@
 <style lang="scss" global>
   @import "./styles/global.scss";
 
-  div {
+  #app-container {
+    height: 100vh;
     display: flex;
   }
 </style>

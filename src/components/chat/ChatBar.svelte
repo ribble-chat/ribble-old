@@ -6,10 +6,15 @@
   }
 </script>
 
-<div>
+<div id="chat-bar-container">
   <button class="icon-button"><i class="fas fa-plus-circle" /></button>
   <input id="chat-form" type="text" placeholder="type a message..." />
-  <img src={`./images/${emoji}`} alt="." on:click={clickEmoji} />
+  <img
+    id="emoji-button"
+    src={`./images/${emoji}`}
+    alt="emoji"
+    on:click={clickEmoji}
+  />
 </div>
 
 <style>
@@ -21,16 +26,12 @@
     border-radius: 0.5em;
     outline: none;
     border: none;
-    background-color: #222222;
+    background-color: var(--form-bg);
     color: white;
     font-size: 1em;
   }
 
-  ::placeholder {
-    color: #9f9f9f;
-  }
-
-  div {
+  #chat-bar-container {
     margin-top: auto;
     padding-left: 1em;
     display: flex;
@@ -38,7 +39,7 @@
     height: 70px;
   }
 
-  img {
+  #emoji-button {
     width: 2.5em;
     height: 2.5em;
     padding: 1em;
@@ -47,7 +48,7 @@
     filter: brightness(100%);
   }
 
-  img:hover {
+  #emoji-button:hover {
     filter: brightness(120%);
   }
 </style>

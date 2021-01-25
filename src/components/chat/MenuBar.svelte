@@ -7,7 +7,11 @@
 
 <div id="menu-bar">
   <div id="person">
-    <img src={`./images/${person.profilePicture}`} alt="." />
+    <img
+      class="profile-picture"
+      src={`./images/${person.profilePicture}`}
+      alt="."
+    />
     <p id="name">{person.name}</p>
   </div>
 
@@ -21,7 +25,7 @@
 <style>
   #menu-bar {
     margin-bottom: auto;
-    height: 60px;
+    height: var(--top-bar-height);
     color: white;
     background-color: var(--bar-bg);
     display: flex;
@@ -41,13 +45,12 @@
 
   #buttons {
     margin-left: auto;
-    margin-right: 1em;
+    margin-right: 0.2em;
   }
 
-  img {
+  .profile-picture {
     width: 2.5em;
     height: 2.5em;
     padding: 1em;
-    border-radius: 50%;
   }
 </style>

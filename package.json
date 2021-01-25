@@ -13,7 +13,7 @@
     "lint": "echo \"No linting configured\"",
     "svelte-build": "rollup -c",
     "svelte-dev": "rollup -c -w",
-    "svelte-start": "sirv public"
+    "svelte-start": "sirv public --port 3000"
   },
   "keywords": [],
   "author": "Jennifer Ong",

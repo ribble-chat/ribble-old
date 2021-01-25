@@ -1,7 +1,5 @@
 <script lang="ts">
-  import MenuBar from "./MenuBar.svelte";
-  import ChatBox from "./ChatBox.svelte";
-  import ChatBar from "./ChatBar.svelte";
+  import { MenuBar, ChatBox, ChatBar } from ".";
 
   const person = {
     name: "Nibbles",
@@ -12,7 +10,7 @@
 </script>
 
 <body>
-  <div>
+  <div id="chat-container">
     <MenuBar {person} />
     <ChatBox {me} />
     <ChatBar />
@@ -20,7 +18,7 @@
 </body>
 
 <style>
-  div {
+  #chat-container {
     height: 100vh;
     display: flex;
     flex-direction: column;
