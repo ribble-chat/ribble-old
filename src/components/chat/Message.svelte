@@ -21,8 +21,6 @@
   }
 
   #block {
-    margin-right: 1.5em;
-    margin-left: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5em;
   }
 </style>
