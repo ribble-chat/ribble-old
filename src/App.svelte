@@ -1,7 +1,6 @@
 <script lang="ts">
   import { Chat } from "./components/chat";
   import { SidePanel } from "./components/sidepanel";
-  import { initializeGRPC } from "./grpc";
 </script>
 
 <style lang="scss" global>

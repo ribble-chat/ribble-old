@@ -24,10 +24,10 @@ export default {
   plugins: [
     svelte({
       ...sveltePreConfig,
-      dev: !production,
-      css: css => {
-        css.write("public/build/bundle.css");
+      compilerOptions: {
+        dev: !production,
       },
+      // css: css => { css.write("public/build/bundle.css"); },
     }),
 
     json(),
