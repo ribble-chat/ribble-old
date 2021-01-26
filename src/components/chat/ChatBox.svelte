@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Message } from "./";
+  import Message from "./Message.svelte";
   export let me: string;
   const messages = [
     {

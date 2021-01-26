@@ -4,6 +4,11 @@
   import { initializeGRPC } from "./grpc";
 </script>
 
+<div id="app-container">
+  <SidePanel />
+  <Chat />
+</div>
+
 <style lang="scss" global>
   @import "./styles/global.scss";
 
@@ -13,8 +18,3 @@
     overflow: hidden;
   }
 </style>
-
-<div id="app-container">
-  <SidePanel />
-  <Chat />
-</div>

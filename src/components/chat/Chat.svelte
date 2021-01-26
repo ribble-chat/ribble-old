@@ -1,5 +1,7 @@
 <script lang="ts">
-  import { MenuBar, ChatBox, ChatBar } from ".";
+  import MenuBar from "./MenuBar.svelte";
+  import ChatBox from "./ChatBox.svelte";
+  import ChatBar from "./ChatBar.svelte";
 
   const person = {
     name: "Nibbles",
