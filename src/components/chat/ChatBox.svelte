@@ -3,6 +3,96 @@
   export let me: string;
   const messages = [
     {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
       from: "Nibbles",
       to: "Jennifer",
       content:
@@ -48,6 +138,8 @@
     flex-direction: column-reverse;
     overflow-y: scroll;
     position: relative;
+    box-sizing: border-box;
+    padding: 0.6em;
   }
 
   .you {
