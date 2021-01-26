@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { Title } from ".";
-  import { ContactsList } from ".";
+  import Title from "./Title.svelte";
+  import ContactsList from "./ContactsList.svelte";
 
   let contacts = [
     {
