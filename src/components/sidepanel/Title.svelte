@@ -2,9 +2,10 @@
 </script>
 
 <div id="title-container">
-  <div id="content-container">
-    <p id="title">Ribble</p>
-    <input id="search-bar" type="text" placeholder="search.." />
+  <p id="title">Ribble</p>
+  <div id="search-bar">
+    <i id="search-icon" class="fas fa-search" />
+    <input id="search-form" type="text" placeholder="search.." />
   </div>
 </div>
 
@@ -15,15 +16,13 @@
     display: flex;
     flex-direction: column;
     color: white;
-  }
-
-  #content-container {
-    margin: 5%;
+    box-sizing: border-box;
+    padding: 0.7em;
   }
 
   #title {
     margin: 0;
-    padding-left: 0.3em;
+    padding-left: 0.2em;
     padding-bottom: 0.5em;
     font-size: 1em;
     font-weight: bold;
@@ -31,13 +30,25 @@
   }
 
   #search-bar {
+    display: flex;
+    background-color: var(--search-bar-bg);
+    box-sizing: border-box;
+    height: 48%;
+    padding: 0.2em;
+    align-items: center;
+  }
+
+  #search-icon {
+    color: var(--form-place-holder-color);
+    font-size: 0.9em;
+    padding: 0 0.3em;
+  }
+
+  #search-form {
     outline: none;
     border: solid;
     width: 90%;
-    grid-area: chat-form;
-    padding-left: 0.5em;
     border-width: 0.2em;
-    border-radius: 0.2em;
     border-color: black;
     background-color: var(--search-bar-bg);
     border-color: var(--search-bar-bg);

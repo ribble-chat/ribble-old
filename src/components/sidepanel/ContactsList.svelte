@@ -14,9 +14,12 @@
   #contacts-list-container {
     background-color: var(--chat-bubble-bg);
     display: flex;
-    height: 100%;
-    width: 100%;
     flex-direction: column;
+    height: 95%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
     position: relative;
     overflow-y: scroll;
     overflow-x: hidden;

@@ -50,8 +50,8 @@
   }
 
   .profile-picture {
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.7em;
+    height: 2.7em;
     padding: 1em;
   }
 </style>
