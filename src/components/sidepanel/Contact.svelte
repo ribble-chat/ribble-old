@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding-bottom: 0.7em;
+    padding-bottom: 0.6em;
     padding-left: 1em;
     box-sizing: border-box;
   }

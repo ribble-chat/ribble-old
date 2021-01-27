@@ -143,6 +143,9 @@
   #side-panel-container {
     min-width: 12em;
     max-width: 12em;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
   }
 </style>
