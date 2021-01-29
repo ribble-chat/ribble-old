@@ -18,17 +18,15 @@ export async function callServer(user, msg) {
   await connection.invoke("SendMessage", user, msg);
 }
 
-export function wrapper() {
-  async function start() {
-    try {
-      await connection.start();
-      console.log("SignalR Connected.");
-    } catch (err) {
-      console.log(err);
-      setTimeout(start, 5000);
-    }
+async function start() {
+  try {
+    await connection.start();
+    console.log("SignalR Connected.");
+  } catch (err) {
+    console.log(err);
+    setTimeout(start, 5000);
   }
-
-  connection.onclose(start);
-  start();
 }
+
+connection.onclose(start);
+start();
