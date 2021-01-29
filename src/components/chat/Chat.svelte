@@ -2,6 +2,8 @@
   import MenuBar from "./MenuBar.svelte";
   import ChatBox from "./ChatBox.svelte";
   import ChatBar from "./ChatBar.svelte";
+  import * as api from "../../api";
+  api.wrapper();
 
   const person = {
     name: "Nibbles",
