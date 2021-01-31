@@ -1,8 +1,22 @@
 <script lang="ts">
+  import * as api from "../../api";
+  function handleNewGroup() {
+    api.joinGroup("test");
+    console.log("join group button");
+  }
 </script>
 
 <div id="title-container">
-  <p id="title">Ribble</p>
+  <div id="top-section">
+    <p id="title">Ribble</p>
+    <button
+      id="join-group-button"
+      class="icon-button"
+      on:click={handleNewGroup}
+    >
+      <i class="fas fa-plus-square" />
+    </button>
+  </div>
   <div id="search-bar">
     <i id="search-icon" class="fas fa-search" />
     <input id="search-form" type="text" placeholder="search.." />
@@ -18,6 +32,15 @@
     color: white;
     box-sizing: border-box;
     padding: 0.7em;
+  }
+
+  #top-section {
+    display: flex;
+  }
+
+  #join-group-button {
+    margin-left: auto;
+    padding: 0 0.3em 0 0;
   }
 
   #title {

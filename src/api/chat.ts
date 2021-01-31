@@ -10,12 +10,16 @@ const connection = new signalR.HubConnectionBuilder()
   .configureLogging(signalR.LogLevel.Information)
   .build();
 
-connection.on("message-received", (user, msg) => {
+connection.on("message-received", (user: string, msg: string) => {
   console.log(user, msg);
 });
 
-export async function callServer(user, msg) {
+export async function callServer(user: string, msg: string) {
   await connection.invoke("SendMessage", user, msg);
+}
+
+export async function joinGroup(groupName: string) {
+  await connection.invoke("JoinGroup", groupName);
 }
 
 async function start() {
