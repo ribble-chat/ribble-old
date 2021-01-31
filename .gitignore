@@ -93,3 +93,6 @@ out/
 
 # Mac
 **.DS_Store
+
+.fake
+.ionide

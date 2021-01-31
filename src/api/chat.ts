@@ -1,6 +1,6 @@
 import * as signalR from "@microsoft/signalr";
 
-const serverAddress = "http://localhost:5000";
+const serverAddress = "ws://localhost:5000";
 
 const connection = new signalR.HubConnectionBuilder()
   .withUrl(`${serverAddress}/chat`, {

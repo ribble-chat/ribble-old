@@ -8,7 +8,7 @@
 <div id="contacts-container">
   <img
     class="profile-picture"
-    src={`./images/${contact.profilePicture}`}
+    src="{`./images/${contact.profilePicture}`}"
     alt="profile"
   />
   <p id="name">{contact.name}</p>

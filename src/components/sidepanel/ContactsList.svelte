@@ -6,7 +6,7 @@
 
 <div id="contacts-list-container">
   {#each contacts as contact}
-    <Contact {contact} />
+    <Contact contact="{contact}" />
   {/each}
 </div>
 

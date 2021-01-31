@@ -7,13 +7,13 @@
 </script>
 
 <div id="chat-bar-container">
-  <button class="icon-button"><i class="fas fa-plus-circle" /></button>
+  <button class="icon-button"><i class="fas fa-plus-circle"></i></button>
   <input id="chat-form" type="text" placeholder="type a message..." />
   <img
     id="emoji-button"
-    src={`./images/${emoji}`}
+    src="{`./images/${emoji}`}"
     alt="emoji"
-    on:click={clickEmoji}
+    on:click="{clickEmoji}"
   />
 </div>
 
