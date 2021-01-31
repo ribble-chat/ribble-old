@@ -136,7 +136,7 @@
 
 <div id="side-panel-container">
   <Title />
-  <ContactsList {contacts} />
+  <ContactsList contacts="{contacts}" />
 </div>
 
 <style>
