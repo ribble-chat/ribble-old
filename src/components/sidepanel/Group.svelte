@@ -1,23 +1,23 @@
 <script lang="ts">
   import { setCurrentGroup } from "stores/chat";
+  import type { Group } from "types";
 
-  export let group = {
-    name: "unnamed",
-    profilePicture: "",
-  };
+  export let group: Group;
+
+  $: ({ name, picture } = group);
 
   function selectGroup() {
-    setCurrentGroup(group.name);
+    setCurrentGroup(name);
   }
 </script>
 
 <div id="group-container" on:click={selectGroup}>
   <img
     class="group-picture"
-    src={`./images/${group.profilePicture}`}
+    src={`./images/${picture}`}
     alt="profile"
   />
-  <p id="group-name">{group.name}</p>
+  <p id="group-name">{name}</p>
 </div>
 
 <style>

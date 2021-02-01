@@ -1,20 +1,20 @@
 <script lang="ts">
   import type { Group } from "types";
 
-  export let group: Group = {
-    name: "unnamed",
-    picture: "unamed",
-  };
+  export let group: Group;
+
+  $: ({ name, picture } = group);
+
 </script>
 
 <header id="menu-bar-container">
   <div id="group-title">
     <img
       class="group-picture"
-      src={`./images/${group.picture}`}
+      src={`./images/${picture}`}
       alt="."
     />
-    <p id="group-name">{group.name}</p>
+    <p id="group-name">{name}</p>
   </div>
 
   <nav id="util-buttons">

@@ -2,10 +2,11 @@
   import type { Msg } from "types";
 
   export let message: Msg;
+  $: ({content} = message);
 </script>
 
 <div id="block">
-  <p id="message">{message.content}</p>
+  <p id="message">{content}</p>
 </div>
 
 <style>
