@@ -1,7 +1,9 @@
 <script lang="ts">
-  export let group = {
+  import type { Group } from "types";
+
+  export let group: Group = {
     name: "unnamed",
-    groupPicture: "unamed",
+    picture: "unamed",
   };
 </script>
 
@@ -9,7 +11,7 @@
   <div id="group-title">
     <img
       class="group-picture"
-      src={`./images/${group.groupPicture}`}
+      src={`./images/${group.picture}`}
       alt="."
     />
     <p id="group-name">{group.name}</p>

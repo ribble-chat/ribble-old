@@ -1,8 +1,9 @@
 <script lang="ts">
+  import type { Msg } from "types";
   import Message from "./Message.svelte";
 
   export let me: string;
-  const messages = [
+  const messages: Msg[] =  [
     {
       from: "Jennifer",
       to: "Nibbles",
@@ -121,11 +122,11 @@
   {#each messages as message}
     {#if me === message.from}
       <div class="message you">
-        <Message {...message} />
+        <Message {message} />
       </div>
     {:else}
       <div class="message other">
-        <Message {...message} />
+        <Message {message} />
       </div>
     {/if}
   {/each}

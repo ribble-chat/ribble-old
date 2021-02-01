@@ -1,12 +1,11 @@
 <script lang="ts">
-  export let from: string;
-  export let to: string;
-  export let content: string;
-  export let time: int;
+  import type { Msg } from "types";
+
+  export let message: Msg;
 </script>
 
 <div id="block">
-  <p id="message">{content}</p>
+  <p id="message">{message.content}</p>
 </div>
 
 <style>

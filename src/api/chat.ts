@@ -12,12 +12,12 @@ const connection = new signalR.HubConnectionBuilder()
   .configureLogging(signalR.LogLevel.Information)
   .build();
 
-connection.on("joined-group", (groupName: string, connectionId: string) => {
-  console.log(`${connectionId} joined ${groupName}`);
+connection.on("joined-group", (groupName: string, user: string) => {
+  console.log(`${user} joined ${groupName}`);
 });
 
-connection.on("sent-message-to-group", (connectionId: string, msg: string) => {
-  console.log(`${connectionId} said ${msg} to group: ${get(currentGroup)}`);
+connection.on("message-received", (msgAuthor: string, msg: string) => {
+  console.log(`${msgAuthor} said ${msg} to group: ${get(currentGroup)}`);
 });
 
 export async function joinGroup(groupName: string, user: string) {

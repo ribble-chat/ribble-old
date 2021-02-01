@@ -8,6 +8,7 @@ import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 import alias from "@rollup/plugin-alias";
+import includePaths from "rollup-plugin-includepaths";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -28,6 +29,13 @@ export default {
         dev: !production,
       },
       // css: css => { css.write("public/build/bundle.css"); },
+    }),
+
+    includePaths({
+      include: {},
+      paths: ["src"],
+      external: [],
+      extensions: [".json", ".svelte", ".ts"],
     }),
 
     json(),

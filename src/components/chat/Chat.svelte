@@ -2,10 +2,11 @@
   import MenuBar from "./MenuBar.svelte";
   import ChatBox from "./ChatBox.svelte";
   import ChatBar from "./ChatBar.svelte";
+  import type { Group } from "types";
 
-  const group = {
+  const group: Group = {
     name: "Nibbles",
-    groupPicture: "nibbles.png",
+    picture: "nibbles.png",
   };
 
   const me = "Jennifer";

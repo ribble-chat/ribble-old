@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { setCurrentGroup } from "../../stores/chat";
+  import { setCurrentGroup } from "stores/chat";
 
   export let group = {
     name: "unnamed",

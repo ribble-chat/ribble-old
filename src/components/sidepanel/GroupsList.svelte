@@ -1,7 +1,7 @@
 <script lang="ts">
-  import * as api from "../../api";
+  import * as api from "api";
   import Group from "./Group.svelte";
-  import { setCurrentGroup } from "../../stores/chat";
+  import { setCurrentGroup } from "stores/chat";
 
   let groups = [];
 

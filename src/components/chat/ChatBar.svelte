@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as api from "../../api";
+  import * as api from "api";
   export const emoji: string = "nibbles.png";
 
   let message = "";
