@@ -2,18 +2,17 @@
   import MenuBar from "./MenuBar.svelte";
   import ChatBox from "./ChatBox.svelte";
   import ChatBar from "./ChatBar.svelte";
-  import * as api from "../../api";
 
-  const person = {
+  const group = {
     name: "Nibbles",
-    profilePicture: "nibbles.png",
+    groupPicture: "nibbles.png",
   };
 
   const me = "Jennifer";
 </script>
 
 <div id="chat-container">
-  <MenuBar {person} />
+  <MenuBar {group} />
   <ChatBox {me} />
   <ChatBar />
 </div>

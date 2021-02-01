@@ -1,6 +1,5 @@
 <script lang="ts">
   import Message from "./Message.svelte";
-  import * as api from "../../api";
 
   export let me: string;
   const messages = [

@@ -17,7 +17,6 @@ connection.on("joined-group", (groupName: string, connectionId: string) => {
 });
 
 connection.on("sent-message-to-group", (connectionId: string, msg: string) => {
-  console.log("TEST");
   console.log(`${connectionId} said ${msg} to group: ${get(currentGroup)}`);
 });
 

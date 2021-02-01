@@ -1,27 +1,27 @@
 <script lang="ts">
   import { setCurrentGroup } from "../../stores/chat";
 
-  export let contact = {
+  export let group = {
     name: "unnamed",
     profilePicture: "",
   };
 
   function selectGroup() {
-    setCurrentGroup(contact.name);
+    setCurrentGroup(group.name);
   }
 </script>
 
-<div id="contacts-container" on:click={selectGroup}>
+<div id="group-container" on:click={selectGroup}>
   <img
-    class="profile-picture"
-    src={`./images/${contact.profilePicture}`}
+    class="group-picture"
+    src={`./images/${group.profilePicture}`}
     alt="profile"
   />
-  <p id="name">{contact.name}</p>
+  <p id="group-name">{group.name}</p>
 </div>
 
 <style>
-  #contacts-container {
+  #group-container {
     display: flex;
     align-items: center;
     width: 100%;
@@ -30,16 +30,16 @@
     box-sizing: border-box;
   }
 
-  #contacts-container:hover {
-    background-color: var(--contact-hover-bg);
+  #group-container:hover {
+    background-color: var(--group-hover-bg);
   }
 
-  .profile-picture {
+  .group-picture {
     width: 2.4em;
     height: 2.4em;
   }
 
-  #name {
+  #group-name {
     color: white;
     font-size: 0.9em;
     padding-left: 1em;
