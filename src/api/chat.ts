@@ -14,12 +14,16 @@ connection.on("message-received", (user: string, msg: string) => {
   console.log(user, msg);
 });
 
+connection.on("joined-group", (groupName: string, user: string) => {
+  console.log(`${user} joined ${groupName}`);
+});
+
 export async function callServer(user: string, msg: string) {
   await connection.invoke("SendMessage", user, msg);
 }
 
-export async function joinGroup(groupName: string) {
-  await connection.invoke("JoinGroup", groupName);
+export async function joinGroup(groupName: string, user: string) {
+  await connection.invoke("JoinGroup", groupName, user);
 }
 
 async function start() {
