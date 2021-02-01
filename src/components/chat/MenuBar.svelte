@@ -5,22 +5,22 @@
   };
 </script>
 
-<div id="menu-bar">
+<header id="menu-bar">
   <div id="person">
     <img
       class="profile-picture"
-      src="{`./images/${person.profilePicture}`}"
+      src={`./images/${person.profilePicture}`}
       alt="."
     />
     <p id="name">{person.name}</p>
   </div>
 
-  <div id="buttons">
-    <button class="icon-button"><i class="fas fa-phone-alt"></i></button>
-    <button class="icon-button"><i class="fas fa-search"></i></button>
-    <button class="icon-button"><i class="fas fa-cog"></i></button>
-  </div>
-</div>
+  <nav id="buttons">
+    <button class="icon-button"><i class="fas fa-phone-alt" /></button>
+    <button class="icon-button"><i class="fas fa-search" /></button>
+    <button class="icon-button"><i class="fas fa-cog" /></button>
+  </nav>
+</header>
 
 <style>
   #menu-bar {

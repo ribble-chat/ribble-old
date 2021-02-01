@@ -12,16 +12,11 @@
   const me = "Jennifer";
 </script>
 
-<body>
-  <div id="chat-container">
-    <button on:click={() => api.callServer("user", "hiretard")}>
-      click me lul
-    </button>
-    <MenuBar {person} on:click={() => console.log("ur mum")} />
-    <ChatBox {me} />
-    <ChatBar />
-  </div>
-</body>
+<div id="chat-container">
+  <MenuBar {person} />
+  <ChatBox {me} />
+  <ChatBar />
+</div>
 
 <style>
   #chat-container {

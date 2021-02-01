@@ -1,4 +1,6 @@
 import * as signalR from "@microsoft/signalr";
+import { currentGroup } from "../stores/chat";
+import { get } from "svelte/store";
 
 const serverAddress = "ws://localhost:5000";
 
@@ -10,20 +12,21 @@ const connection = new signalR.HubConnectionBuilder()
   .configureLogging(signalR.LogLevel.Information)
   .build();
 
-connection.on("message-received", (user: string, msg: string) => {
-  console.log(user, msg);
+connection.on("joined-group", (groupName: string, connectionId: string) => {
+  console.log(`${connectionId} joined ${groupName}`);
 });
 
-connection.on("joined-group", (groupName: string, user: string) => {
-  console.log(`${user} joined ${groupName}`);
+connection.on("sent-message-to-group", (connectionId: string, msg: string) => {
+  console.log("TEST");
+  console.log(`${connectionId} said ${msg} to group: ${get(currentGroup)}`);
 });
-
-export async function callServer(user: string, msg: string) {
-  await connection.invoke("SendMessage", user, msg);
-}
 
 export async function joinGroup(groupName: string, user: string) {
   await connection.invoke("JoinGroup", groupName, user);
+}
+
+export async function sendMessageToGroup(msg: string) {
+  await connection.invoke("SendMessageToGroup", get(currentGroup), msg);
 }
 
 async function start() {

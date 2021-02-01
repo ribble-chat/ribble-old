@@ -1,19 +1,18 @@
 <script lang="ts">
   import * as api from "../../api";
   import Contact from "./Contact.svelte";
+  import { setCurrentGroup } from "../../stores/chat";
 
-  let contacts = [
-    {
-      name: "Nibbles",
-      profilePicture: "nibbles.png",
-    },
-  ];
+  let contacts = [];
 
-  const groupName: string = "group name";
+  let count = 1;
+  const groupName: string = "group";
   const testPicture: string = "nibbles.png";
   function handleNewGroup() {
-    api.joinGroup(groupName, "test user");
-    contacts = [{ name: groupName, profilePicture: testPicture }, ...contacts];
+    let name = `${groupName} ${count++}`;
+    api.joinGroup(name, "test user");
+    setCurrentGroup(name);
+    contacts = [{ name, profilePicture: testPicture }, ...contacts];
   }
 </script>
 
@@ -37,9 +36,9 @@
     height: 95%;
     width: 100%;
     box-sizing: border-box;
+    margin: 0;
     padding-top: 0.2em;
     padding-bottom: 0.1em;
-    position: relative;
     overflow-y: scroll;
     overflow-x: hidden;
   }
