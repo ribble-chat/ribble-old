@@ -15,6 +15,8 @@ const production = !process.env.ROLLUP_WATCH;
 export default {
   input: "src/svelte.ts",
 
+  context: "this",
+
   output: {
     sourcemap: !production,
     format: "iife",
