@@ -1,15 +1,12 @@
 {
-  "include": ["packages/**/*.ts", "app/**/*.ts"],
   "exclude": ["node_modules/*"],
   "compilerOptions": {
+    "rootDir": "src",
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "types": ["svelte", "node", "jest"],
-    "baseUrl": "./",
-    "paths": {
-      "@pkg/*": ["packages/*/src"]
-    }
+    "baseUrl": "./src"
   }
 }

@@ -1,14 +1,27 @@
 <script lang="ts">
+  import * as api from "api";
   export const emoji: string = "nibbles.png";
 
+  let message = "";
   function clickEmoji() {
     console.log("clicked emoji");
+  }
+
+  function sendMessage() {
+    api.sendMessageToGroup(message);
   }
 </script>
 
 <div id="chat-bar-container">
-  <button class="icon-button"><i class="fas fa-plus-circle" /></button>
-  <input id="chat-form" type="text" placeholder="type a message..." />
+  <button on:click={sendMessage} id="add-button" class="icon-button">
+    <i class="fas fa-plus-circle" />
+  </button>
+  <input
+    bind:value={message}
+    id="chat-form"
+    type="text"
+    placeholder="type a message..."
+  />
   <img
     id="emoji-button"
     src={`./images/${emoji}`}

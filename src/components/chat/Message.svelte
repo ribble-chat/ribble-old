@@ -1,8 +1,8 @@
 <script lang="ts">
-  export let from: string;
-  export let to: string;
-  export let content: string;
-  export let time: int;
+  import type { Msg } from "types";
+
+  export let message: Msg;
+  $: ({content} = message);
 </script>
 
 <div id="block">
@@ -21,8 +21,6 @@
   }
 
   #block {
-    margin-right: 1.5em;
-    margin-left: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5em;
   }
 </style>

@@ -1,7 +1,99 @@
 <script lang="ts">
-  import { Message } from "./";
+  import type { Msg } from "types";
+  import Message from "./Message.svelte";
+
   export let me: string;
-  const messages = [
+  const messages: Msg[] =  [
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
+    {
+      from: "Jennifer",
+      to: "Nibbles",
+      content: "<3",
+    },
+    {
+      from: "Nibbles",
+      to: "Jennifer",
+      content: "<3",
+    },
     {
       from: "Nibbles",
       to: "Jennifer",
@@ -30,11 +122,11 @@
   {#each messages as message}
     {#if me === message.from}
       <div class="message you">
-        <Message {...message} />
+        <Message {message} />
       </div>
     {:else}
       <div class="message other">
-        <Message {...message} />
+        <Message {message} />
       </div>
     {/if}
   {/each}
@@ -48,6 +140,8 @@
     flex-direction: column-reverse;
     overflow-y: scroll;
     position: relative;
+    box-sizing: border-box;
+    padding: 0.6em;
   }
 
   .you {

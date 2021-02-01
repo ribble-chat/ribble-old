@@ -1,21 +1,22 @@
 <script lang="ts">
-  import { MenuBar, ChatBox, ChatBar } from ".";
+  import MenuBar from "./MenuBar.svelte";
+  import ChatBox from "./ChatBox.svelte";
+  import ChatBar from "./ChatBar.svelte";
+  import type { Group } from "types";
 
-  const person = {
+  const group: Group = {
     name: "Nibbles",
-    profilePicture: "nibbles.png",
+    picture: "nibbles.png",
   };
 
   const me = "Jennifer";
 </script>
 
-<body>
-  <div id="chat-container">
-    <MenuBar {person} />
-    <ChatBox {me} />
-    <ChatBar />
-  </div>
-</body>
+<div id="chat-container">
+  <MenuBar {group} />
+  <ChatBox {me} />
+  <ChatBar />
+</div>
 
 <style>
   #chat-container {
