@@ -1,5 +1,6 @@
 <script lang="ts">
   import * as api from "api";
+  import { currentGroup } from "stores/chat";
   export const emoji: string = "nibbles.png";
 
   let message = "";
@@ -8,7 +9,7 @@
   }
 
   function sendMessage() {
-    api.sendMessageToGroup(message);
+    api.sendMessageToGroup($currentGroup, message);
   }
 </script>
 

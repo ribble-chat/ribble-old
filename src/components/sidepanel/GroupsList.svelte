@@ -1,7 +1,7 @@
 <script lang="ts">
   import * as api from "api";
   import Group from "./Group.svelte";
-  import { setCurrentGroup } from "stores/chat";
+  import { currentGroup } from "stores/chat";
 
   let groups = [];
 
@@ -11,7 +11,7 @@
   function handleNewGroup() {
     let name = `${groupName} ${count++}`;
     api.joinGroup(name, "test user");
-    setCurrentGroup(name);
+    currentGroup.set(name);
     groups = [{ name, profilePicture: testPicture }, ...groups];
   }
 </script>

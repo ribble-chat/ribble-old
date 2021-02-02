@@ -1,22 +1,14 @@
 <script lang="ts">
-  import { setCurrentGroup } from "stores/chat";
+  import { currentGroup } from "stores";
+
   import type { Group } from "types";
 
   export let group: Group;
-
   $: ({ name, picture } = group);
-
-  function selectGroup() {
-    setCurrentGroup(name);
-  }
 </script>
 
-<div id="group-container" on:click={selectGroup}>
-  <img
-    class="group-picture"
-    src={`./images/${picture}`}
-    alt="profile"
-  />
+<div id="group-container" on:click={() => currentGroup.set(name)}>
+  <img class="group-picture" src={`./images/${picture}`} alt="profile" />
   <p id="group-name">{name}</p>
 </div>
 

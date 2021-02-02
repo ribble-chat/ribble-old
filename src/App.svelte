@@ -1,18 +1,22 @@
 <script lang="ts">
-  import { Chat } from "./components/chat";
-  import { SidePanel } from "./components/sidepanel";
+  import { Main, Login } from "views";
+  import { currentUser } from "stores";
 </script>
 
-<div id="app-container">
-  <SidePanel />
-  <Chat />
+<div id="main-container">
+  {#if $currentUser}
+    <Main />
+  {:else}
+    <Login />
+  {/if}
 </div>
 
 <style lang="scss" global>
   @import "./styles/global.scss";
 
-  #app-container {
-    height: 100vh;
+  #main-container {
+    height: 100%;
+    width: 100%;
     display: flex;
     overflow: hidden;
   }
