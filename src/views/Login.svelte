@@ -12,18 +12,8 @@
 
 <main>
   <form id="login-form" on:submit={handleLogin}>
-    <input
-      class="text-input"
-      bind:value={username}
-      type="text"
-      placeholder="username/email"
-    />
-    <input
-      class="text-input"
-      bind:value={password}
-      type="password"
-      placeholder="password"
-    />
+    <input bind:value={username} type="text" placeholder="username/email" />
+    <input bind:value={password} type="password" placeholder="password" />
     <input id="submit-button" value="LOG IN" type="submit" />
   </form>
 </main>
@@ -37,19 +27,19 @@
 
   #login-form > input {
     border-radius: 10px;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
+    padding: 0.6em 0;
     margin: 1em;
     border: none;
     outline: none;
   }
 
-  .text-input {
-    padding-left: 1em;
+  #login-form input[type="text"],
+  #login-form input[type="password"] {
+    padding: 0.6em 1em;
   }
 
   #submit-button {
     color: white;
-    background-color: #4b9db2;
+    background-color: #0092ab;
   }
 </style>

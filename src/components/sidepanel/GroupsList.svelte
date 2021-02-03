@@ -1,9 +1,10 @@
 <script lang="ts">
   import * as api from "api";
   import Group from "./Group.svelte";
+  import type { Group as TGroup } from "types";
   import { currentGroup } from "stores/chat";
 
-  let groups = [];
+  let groups: TGroup[] = [];
 
   let count = 1;
   const groupName: string = "group";
@@ -12,7 +13,7 @@
     let name = `${groupName} ${count++}`;
     api.joinGroup(name, "test user");
     currentGroup.set(name);
-    groups = [{ name, profilePicture: testPicture }, ...groups];
+    groups = [{ name, picture: testPicture }, ...groups];
   }
 </script>
 
@@ -58,7 +59,7 @@
   }
 
   #search-icon {
-    color: var(--form-place-holder-color);
+    color: var(--form-place-holder-col);
     font-size: 0.9em;
     padding: 0 0.3em;
   }

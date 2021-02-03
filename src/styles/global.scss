@@ -2,17 +2,18 @@
 
 :root {
   --bar-bg: #1a1a1a;
-  --message-text-color: #d7d7d7;
+  --message-text-col: #d7d7d7;
   --form-bg: #222222;
-  --form-place-holder-color: #9f9f9f;
+  --form-place-holder-col: #9f9f9f;
   --chat-box-bg: #343434;
   --chat-bubble-bg: #232323;
   --side-panel-bg: #232323;
   --search-bar-bg: #141414;
-  --scroll-bar-color: rgba(0, 0, 0, 0.5);
+  --scroll-bar-col: rgba(0, 0, 0, 0.5);
   --top-bar-height: 4.5em;
   --group-hover-bg: #1a1a1a;
   --authentication-bg: #191919;
+  --authentication-accent-col: #0092ab;
   --login-form-bg: #26282a;
 }
 
@@ -42,7 +43,7 @@ body {
 }
 
 ::placeholder {
-  color: var(--form-place-holder-color);
+  color: var(--form-place-holder-col);
 }
 
 ::-webkit-scrollbar {
@@ -50,6 +51,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scroll-bar-color);
+  background: var(--scroll-bar-col);
   border-radius: 3em;
 }

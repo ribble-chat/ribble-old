@@ -4,9 +4,7 @@
   export const emoji: string = "nibbles.png";
 
   let message = "";
-  function clickEmoji() {
-    console.log("clicked emoji");
-  }
+  function clickemoji() {}
 
   function sendMessage() {
     api.sendMessageToGroup($currentGroup, message);
@@ -14,7 +12,7 @@
 </script>
 
 <div id="chat-bar-container">
-  <button on:click={sendMessage} id="add-button" class="icon-button">
+  <button id="add-button" class="icon-button">
     <i class="fas fa-plus-circle" />
   </button>
   <input
@@ -27,7 +25,7 @@
     id="emoji-button"
     src={`./images/${emoji}`}
     alt="emoji"
-    on:click={clickEmoji}
+    on:click={sendMessage}
   />
 </div>
 

@@ -2,7 +2,7 @@
   import type { Msg } from "types";
 
   export let message: Msg;
-  $: ({content} = message);
+  $: ({ content } = message);
 </script>
 
 <div id="block">
@@ -11,7 +11,7 @@
 
 <style>
   #message {
-    color: var(--message-text-color);
+    color: var(--message-text-col);
     background-color: var(--chat-bubble-bg);
     padding: 0.8em;
     margin: 0;
