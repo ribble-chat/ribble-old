@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Main, Login } from "views";
+  import { Main, Authentication } from "views";
   import { currentUser } from "stores";
 </script>
 
@@ -7,7 +7,7 @@
   {#if $currentUser}
     <Main />
   {:else}
-    <Login />
+    <Authentication />
   {/if}
 </div>
 
