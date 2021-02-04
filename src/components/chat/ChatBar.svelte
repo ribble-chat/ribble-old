@@ -7,7 +7,8 @@
   function clickemoji() {}
 
   function sendMessage() {
-    api.sendMessageToGroup($currentGroup, message);
+    if (message === "") return;
+    api.sendMessageToGroup($currentGroup.name, message);
   }
 </script>
 

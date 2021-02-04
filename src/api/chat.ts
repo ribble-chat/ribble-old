@@ -15,7 +15,7 @@ connection.on("joined-group", (groupName: string, user: string) => {
 });
 
 connection.on("message-received", (msgAuthor: string, msg: string) => {
-  console.log(`${msgAuthor} sent ${msg} to group`);
+  console.log(`${msgAuthor} sent "${msg}" to group`);
 });
 
 export async function joinGroup(groupName: string, user: string) {

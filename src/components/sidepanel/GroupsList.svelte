@@ -12,7 +12,7 @@
   function handleNewGroup() {
     let name = `${groupName} ${count++}`;
     api.joinGroup(name, "test user");
-    currentGroup.set(name);
+    currentGroup.set({ name, picture: testPicture });
     groups = [{ name, picture: testPicture }, ...groups];
   }
 </script>
@@ -76,7 +76,7 @@
   }
 
   #groups-list-container {
-    background-color: var(--chat-bubble-bg);
+    background-color: var(--side-panel-bg);
     display: flex;
     flex-direction: column;
     height: 95%;

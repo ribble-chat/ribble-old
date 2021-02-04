@@ -7,7 +7,7 @@
   $: ({ name, picture } = group);
 </script>
 
-<div id="group-container" on:click={() => currentGroup.set(name)}>
+<div id="group-container" on:click={() => currentGroup.set({ name, picture })}>
   <img class="group-picture" src={`./images/${picture}`} alt="profile" />
   <p id="group-name">{name}</p>
 </div>

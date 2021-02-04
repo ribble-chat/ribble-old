@@ -3,11 +3,10 @@
   import Register from "./Register.svelte";
 
   type Tab = "login" | "register";
-  let currentTab: Tab = "register";
+  let activeTab: Tab = "login";
 
   function switchTab(tab: Tab) {
-    if (tab === currentTab) return;
-    currentTab = tab;
+    activeTab = tab;
   }
 </script>
 
@@ -17,10 +16,10 @@
       <h2 id="ribble-title">Ribble</h2>
 
       <nav id="tab-buttons">
-        {#if currentTab === "login"}
+        {#if activeTab === "login"}
           <p id="selected-tab" on:click={() => switchTab("login")}>LOG IN</p>
           <p on:click={() => switchTab("register")}>REGISTER</p>
-        {:else if currentTab === "register"}
+        {:else if activeTab === "register"}
           <p on:click={() => switchTab("login")}>LOG IN</p>
           <p id="selected-tab" on:click={() => switchTab("register")}>
             REGISTER
@@ -29,9 +28,9 @@
       </nav>
     </section>
 
-    {#if currentTab === "login"}
+    {#if activeTab === "login"}
       <Login />
-    {:else if currentTab === "register"}
+    {:else if activeTab === "register"}
       <Register />
     {/if}
   </content>

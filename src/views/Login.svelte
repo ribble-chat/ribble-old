@@ -1,5 +1,6 @@
 <script lang="ts">
   import * as api from "api";
+  import { currentUser } from "stores";
 
   let username: string;
   let password: string;
@@ -7,6 +8,7 @@
   function handleLogin(e: Event) {
     e.preventDefault();
     api.login(username, password);
+    currentUser.set(true);
   }
 </script>
 

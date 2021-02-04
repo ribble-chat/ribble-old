@@ -1,21 +1,19 @@
 <script lang="ts">
+  import { currentGroup } from "stores";
   import type { Group } from "types";
-
-  export let group: Group;
-
-  $: ({ name, picture } = group);
-
 </script>
 
 <header id="menu-bar-container">
-  <div id="group-title">
-    <img
-      class="group-picture"
-      src={`./images/${picture}`}
-      alt="."
-    />
-    <p id="group-name">{name}</p>
-  </div>
+  {#if $currentGroup != undefined}
+    <div id="group-title">
+      <img
+        class="group-picture"
+        src={`./images/${$currentGroup.picture}`}
+        alt="."
+      />
+      <p id="group-name">{$currentGroup.name}</p>
+    </div>
+  {/if}
 
   <nav id="util-buttons">
     <button class="icon-button"><i class="fas fa-phone-alt" /></button>
